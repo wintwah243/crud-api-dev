@@ -10,6 +10,8 @@ app.use(express.json());
 
 const port = 4000;
 
+// return value ပြန်စရာမရှိလို့ void ကိုသံုးတယ်
+// Promise ကိုသံုးတာက typescript ကိုမှ async function မို့လို့
 const connectDB = async (): Promise<void> => {
     try {
         const mongoUrl = process.env.MONGODB_URL_PATH;
